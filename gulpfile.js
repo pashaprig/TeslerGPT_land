@@ -46,11 +46,11 @@ exports.html = html;
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/script.js")
-    .pipe(terser())
-    .pipe(rename("script.min.js"))
+  return gulp.src("source/js/*.js")
+    // .pipe(terser())
+    // .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
-    .pipe(sync.stream());
+    // .pipe(sync.stream());
 }
 
 exports.scripts = scripts;
@@ -75,6 +75,13 @@ const copyImages = () => {
 }
 
 exports.images = copyImages;
+
+const copyVideos = () => {
+  return gulp.src("source/video/**/*.*")
+    .pipe(gulp.dest("build/video"))
+}
+
+exports.videos = copyVideos;
 
 // WebP
 
@@ -160,6 +167,7 @@ const build = gulp.series(
   clean,
   copy,
   optimizeImages,
+  copyVideos,
   gulp.parallel(
     styles,
     html,
@@ -178,6 +186,7 @@ exports.default = gulp.series(
   clean,
   copy,
   copyImages,
+  copyVideos,
   gulp.parallel(
     styles,
     html,
