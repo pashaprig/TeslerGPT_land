@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  max-height: 320px;
+
+  input {
+    box-sizing: border-box;
+    display: flex;
+    padding: 0 15px;
+    height: 55px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white-text;
+    background: transparent;
+    border: 1px solid $white-text;
+  }
+}

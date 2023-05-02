@@ -1,0 +1,27 @@
+.promo {
+  background: $bcg-black;
+  color: $white-text;
+  padding-bottom: 170px;
+}
+
+.promo__content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__header {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 78px;
+}
+
+.promo__about {
+  max-width: 62%;
+}
+
+.promo__botom-wrapper {
+  display: flex;
+  gap: 140px;
+  margin-top: 120px;
+}

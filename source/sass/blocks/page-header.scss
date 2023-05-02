@@ -1,12 +1,11 @@
 .page-header {
+  background-color: $bcg-black;
+}
+
+.page-header__content-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 96px;
-  background-color: $bcg-black;
-
-  @media (min-width: $tablet-width) {
-  }
 }
 
 .daily-pay__icon {

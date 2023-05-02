@@ -29,25 +29,27 @@ a {
 }
 
 .btn {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 260px;
-  margin-bottom: 25px;
-  padding: 14px 28px;
+  height: 55px;
+  padding: 0 15px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
-  color: $basic-white;
-  text-transform: uppercase;
-  background-color: $gold;
-  border: 1px solid $gold;
-  border-radius: 4px;
+  line-height: 24px;
+  color: $main-color;
+  background-color: transparent;
+  border: 1px solid $main-color;
 
   &:hover {
-    color: $gold;
-    background-color: transparent;
+    color: $bcg-black;
+    background-color: $main-color;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }
 
@@ -62,4 +64,13 @@ a {
   @media (min-width: $tablet-width) {
     display: block;
   }
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 96px;
 }
