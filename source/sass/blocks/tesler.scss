@@ -1,0 +1,37 @@
+.tesler {
+  padding: 100px 0;
+}
+
+.tesler__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tesler__heading {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.tesler__content-wrapper {
+  display: flex;
+  gap: 70px;
+}
+
+.tesler__text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tesler__about {
+  margin-bottom: auto;
+}
+
+.tesler__subtitle {
+  padding: 28px;
+  font-size: 20px;
+  border: 2px solid $bcg-black;
+}

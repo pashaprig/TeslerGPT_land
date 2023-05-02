@@ -85,13 +85,13 @@ exports.videos = copyVideos;
 
 // WebP
 
-// const createWebp = () => {
-//   return gulp.src("source/img/**/*.{jpg,png}")
-//     .pipe(webp({quality: 90}))
-//     .pipe(gulp.dest("build/img"))
-// }
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 75}))
+    .pipe(gulp.dest("build/img"))
+}
 
-// exports.createWebp = createWebp;
+exports.createWebp = createWebp;
 
 // Sprite
 
@@ -173,14 +173,13 @@ const build = gulp.series(
     html,
     scripts,
     sprite,
-    // createWebp
+    createWebp
   ),
 );
 
 exports.build = build;
 
 // Default
-
 
 exports.default = gulp.series(
   clean,
@@ -192,7 +191,7 @@ exports.default = gulp.series(
     html,
     scripts,
     sprite,
-    // createWebp
+    createWebp
   ),
   gulp.series(
     server,

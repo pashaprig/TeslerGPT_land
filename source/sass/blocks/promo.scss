@@ -1,7 +1,7 @@
 .promo {
-  background: $bcg-black;
-  color: $white-text;
   padding-bottom: 170px;
+  color: $white-text;
+  background: $bcg-black 55% 35% no-repeat url(../img/img/promo-bcg.png);
 }
 
 .promo__content-wrapper {
