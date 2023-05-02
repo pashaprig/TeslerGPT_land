@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -32,6 +36,7 @@ a {
 .btn {
   box-sizing: border-box;
   display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   height: 55px;
@@ -44,9 +49,17 @@ a {
   background-color: transparent;
   border: 1px solid $main-color;
 
+  & svg {
+    fill: $main-color;
+  }
+
   &:hover {
     color: $bcg-black;
     background-color: $main-color;
+
+    svg {
+      fill: $bcg-black;
+    }
   }
 
   &:active {

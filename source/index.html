@@ -17,11 +17,9 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__content-wrapper container">
-      <div class="logo">
-        <svg class="daily-pay__icon" width="56" height="56">
+        <svg width="56" height="56">
           <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
-      </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#tesler">Tesler GPT</a></li>
@@ -44,13 +42,18 @@
           conducting
           59,394 operations per second.</p>
         <div class="promo__botom-wrapper">
-          <form action="" class="form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="E-mail">
-            <p>phone</p>
-            <button class="btn">
+          <form action="" class="form" id="leadform1">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="tel" name="phone1" placeholder="33" id="phone1" />
+            <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
+            <input type="hidden" name="currency" value="eur">
+            <input id="country1" type="hidden" name="country" value="ru">
+            <input type="hidden" name="comment" class="comment" value="">
+            <input type="hidden" name="campaign_name" value="">
+            <button class="btn submit_btn">
               <span>Try Tesler GPT</span>
-              <svg class="daily-pay__icon" width="12" height="13">
+              <svg class="" width="12" height="13">
                 <use xlink:href="img/sprite.svg#arrowTR"></use>
               </svg>
             </button>
@@ -68,7 +71,7 @@
       </div>
     </section>
 
-    <section class="tesler">
+    <section class="tesler" id="tesler">
       <div class="tesler__wrapper container">
         <h2 class="tesler__heading">REVOLUTIONARY “LEAD PATTERN” DATA</h2>
         <div class="tesler__content-wrapper">
@@ -90,7 +93,7 @@
       </div>
     </section>
 
-    <section class="members">
+    <section class="members" id="members">
       <div class="members__wrapper container">
         <h2 class="members__heading">Our members</h2>
         <ul class="members__list">
@@ -149,6 +152,52 @@
         </ul>
       </div>
     </section>
+
+    <section class="what">
+      <div class="what__wrapper container">
+        <h2 class="what__heading">What we offer</h2>
+        <ul class="what__list">
+          <li class="what__item">
+            <svg class="" width="80" height="80">
+              <use xlink:href="img/sprite.svg#homo"></use>
+            </svg>
+            <p class="what__about">Suits for both <strong>Beginners</strong> and <strong>Professionals</strong></p>
+          </li>
+          <li class="what__item">
+            <svg class="" width="80" height="80">
+              <use xlink:href="img/sprite.svg#checked"></use>
+            </svg>
+            <p class="what__about">Game changing <strong>"Lead Pattern"</strong> Algorithm</p>
+          </li>
+          <li class="what__item">
+            <svg class="" width="80" height="80">
+              <use xlink:href="img/sprite.svg#dollar"></use>
+            </svg>
+            <p class="what__about">Makes up to <strong>$5,000</strong> a day for everyone guaranteed</p>
+          </li>
+          <li class="what__item">
+            <svg class="" width="80" height="80">
+              <use xlink:href="img/sprite.svg#desktop"></use>
+            </svg>
+            <p class="what__about">Works on any device, installs in just <strong>2&nbsp;minutes</strong></p>
+          </li>
+        </ul>
+        <a href="#leadform1" class="btn">
+          <span>Try Tesler GPT</span>
+          <svg class="" width="12" height="13">
+            <use xlink:href="img/sprite.svg#arrowTR"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+      <div class="why-us__wrapper container">
+        <h2 class="why-us__heading">Why us</h2>
+        <p class="why-us__about">Our system diligently tracks the global financial markets round the clock, using advanced Mainframes for massive data processing to detect trends and patterns in international markets. These Lead Patterns enable interested parties to benefit from an automated share of the colossal 17.8 trillion that is traded every day!</p>
+      </div>
+    </section>
+
   </main>
 
   <footer class="page-footer">

@@ -1,0 +1,19 @@
+.why-us {
+  padding: 100px;
+  padding-bottom: 30px;
+  background: $bcg-black;
+  color: $white-text;
+}
+
+.why-us__heading {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.why-us__about {
+  max-width: 760px;
+}

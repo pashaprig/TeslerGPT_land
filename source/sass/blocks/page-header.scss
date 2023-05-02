@@ -1,13 +1,13 @@
 .page-header {
   background-color: $bcg-black;
+
+  svg {
+    fill: $basic-white;
+  }
 }
 
 .page-header__content-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.daily-pay__icon {
-  fill: white;
 }
