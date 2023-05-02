@@ -1,0 +1,37 @@
+.members {
+  margin-top: 50px;
+}
+
+.members__heading {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.members__list {
+  display: flex;
+  gap: 23px;
+}
+
+.members__img {
+  margin-bottom: 20px;
+}
+
+.members__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  font-style: unset;
+}
+
+.members__quote {
+  margin: 20px 0;
+}
+
+.members__date {
+  font-weight: 400;
+}
