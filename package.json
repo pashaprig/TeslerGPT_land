@@ -1,7 +1,7 @@
 {
   "name": "dev-prigar",
   "private": true,
-  "description": "Проект «Новый»",
+  "description": "Проект «TeslerGPT_land»",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
