@@ -1,6 +1,9 @@
 .page-header {
   display: flex;
-  background-color: lightblue;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 96px;
+  background-color: $bcg-black;
 
   @media (min-width: $tablet-width) {
   }

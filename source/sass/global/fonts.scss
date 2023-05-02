@@ -12,3 +12,47 @@
     url("../fonts/montserrat/Montserrat-Regular400.woff") format("woff"),
     url("../fonts/montserrat/Montserrat-Regular400.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat Regular"),
+    url("../fonts/montserrat/Montserrat-Regular500.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Regular500.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Regular500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Montserrat Regular"),
+    url("../fonts/montserrat/Montserrat-Regular600.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Regular600.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Regular600.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat Regular"),
+    url("../fonts/montserrat/Montserrat-Regular700.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Regular700.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Regular700.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Montserrat Regular"),
+    url("../fonts/montserrat/Montserrat-Regular800.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Regular800.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Regular800.ttf") format("truetype");
+}
