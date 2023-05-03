@@ -2,7 +2,8 @@
   background-color: $bcg-black;
 
   @media (max-width: $tablet-width) {
-    padding: 25px 0;
+    padding-top: 25px;
+    padding-bottom: 60px;
   }
 
   svg {

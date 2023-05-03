@@ -2,6 +2,11 @@
   padding-bottom: 170px;
   color: $white-text;
   background: $bcg-black 55% 35% no-repeat url(../img/img/promo-bcg.png);
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 50px;
+    background: $bcg-black;
+  }
 }
 
 .promo__content-wrapper {
@@ -14,14 +19,33 @@
   font-weight: 800;
   font-size: 64px;
   line-height: 78px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 44px;
+  }
 }
 
 .promo__about {
   max-width: 62%;
+
+  @media (max-width: $tablet-width) {
+    max-width: 90%;
+  }
 }
 
 .promo__botom-wrapper {
   display: flex;
   gap: 140px;
   margin-top: 120px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+
+    & img {
+      width: 100%;
+    }
+  }
 }

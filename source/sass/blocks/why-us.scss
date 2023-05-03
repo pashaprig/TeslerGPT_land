@@ -3,6 +3,10 @@
   padding-bottom: 30px;
   background: $bcg-black;
   color: $white-text;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 50px;
+  }
 }
 
 .why-us__heading {
@@ -12,6 +16,11 @@
   line-height: 44px;
   color: $main-color;
   text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 39px;
+  }
 }
 
 .why-us__about {

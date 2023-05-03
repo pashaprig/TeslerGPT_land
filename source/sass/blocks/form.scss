@@ -5,8 +5,14 @@
   width: 300px;
   max-height: 320px;
 
-  &--m0a {
+  &--bottom {
     margin: 0 auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    &--bottom {
+      width: 100%;
+    }
   }
 
   input {

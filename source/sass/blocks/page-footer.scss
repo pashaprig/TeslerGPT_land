@@ -1,7 +1,8 @@
 .page-footer {
   padding: 40px 0;
-  @media (min-width: $tablet-width) {
 
+  @media (max-width: $tablet-width) {
+    padding: 30px;
   }
 }
 
@@ -9,6 +10,10 @@
   display: flex;
   gap: 30px;
   flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    gap: 0;
+  }
 }
 
 .page-footer__top {
@@ -16,6 +21,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    align-items: start;
+    flex-direction: column;
+
+  }
 }
 
 .page-footer__bottom {
@@ -23,10 +34,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 .page-footer__rights {
   max-width: 311px;
+
+  @media (max-width: $tablet-width) {
+    order: 2;
+    margin-top: 20px;
+    max-width: 130px;
+  }
 }
 
 .page-footer__terms-list {
@@ -39,5 +61,17 @@
     font-size: 20px;
     line-height: 23px;
     color: $bcg-black;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 0;
+  }
+}
+
+.page-footer__terms-item {
+  @media (max-width: $tablet-width) {
+    max-width: 121px;
   }
 }

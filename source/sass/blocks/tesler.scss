@@ -1,5 +1,9 @@
 .tesler {
   margin: 100px 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 70px 0;
+  }
 }
 
 .tesler__wrapper {
@@ -14,11 +18,21 @@
   line-height: 44px;
   color: $main-color;
   text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 39px;
+  }
 }
 
 .tesler__content-wrapper {
   display: flex;
   gap: 70px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 .tesler__text-wrapper {
@@ -28,10 +42,28 @@
 
 .tesler__about {
   margin-bottom: auto;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .tesler__subtitle {
   padding: 28px;
   font-size: 20px;
   border: 2px solid $bcg-black;
+
+  @media (max-width: $tablet-width) {
+    padding: 15px 19px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.tesler__img {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    object-fit: cover;
+  }
 }

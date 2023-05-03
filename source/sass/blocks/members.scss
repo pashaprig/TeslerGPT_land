@@ -10,15 +10,30 @@
   line-height: 44px;
   color: $main-color;
   text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    text-align: left;
+    font-size: 32px;
+    line-height: 39px;
+  }
 }
 
 .members__list {
   display: flex;
   gap: 23px;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
 }
 
 .members__img {
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .members__name {
@@ -34,4 +49,9 @@
 
 .members__date {
   font-weight: 400;
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
