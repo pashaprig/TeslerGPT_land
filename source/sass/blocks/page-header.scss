@@ -1,6 +1,10 @@
 .page-header {
   background-color: $bcg-black;
 
+  @media (max-width: $tablet-width) {
+    padding: 25px 0;
+  }
+
   svg {
     fill: $basic-white;
   }
