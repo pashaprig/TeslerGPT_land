@@ -61,11 +61,17 @@
   }
 }
 
-.main-nav__item a {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
-  color: $white-text;
+.main-nav__item {
+  a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: $white-text;
+  }
+
+  &--blc a {
+    color: $bcg-black;
+  }
 
   @media (max-width: $tablet-width) {
     font-size: 18px;

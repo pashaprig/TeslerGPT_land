@@ -7,24 +7,21 @@ class App {
   }
 
   initMobileMenu() {
-    const navMain = document.querySelector('.main-nav');
-    const navToggle = document.querySelector('.main-nav__toggle');
-    const navButtonText = document.querySelector('.main-nav__open-btn-text');
+    const $navMain = document.querySelector('.main-nav');
+    const $navToggle = document.querySelector('.main-nav__toggle');
 
     const initJS = () => {
-      navMain.classList.remove('main-nav--nojs');
+      $navMain.classList.remove('main-nav--nojs');
     }
 
     const closeOpen = () => {
-      navToggle.addEventListener('click', function () {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-          navButtonText.classList.add('visually-hidden');
+      $navToggle.addEventListener('click', function () {
+        if ($navMain.classList.contains('main-nav--closed')) {
+          $navMain.classList.remove('main-nav--closed');
+          $navMain.classList.add('main-nav--opened');
         } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-          navButtonText.classList.remove('visually-hidden');
+          $navMain.classList.add('main-nav--closed');
+          $navMain.classList.remove('main-nav--opened');
         }
       });
     }
@@ -33,9 +30,8 @@ class App {
       const links = document.querySelectorAll('.main-nav__item');
 
       const navLinckHandleClick = () => {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-        navButtonText.classList.remove('visually-hidden');
+        $navMain.classList.add('main-nav--closed');
+        $navMain.classList.remove('main-nav--opened');
       }
 
       links.forEach(link => {
