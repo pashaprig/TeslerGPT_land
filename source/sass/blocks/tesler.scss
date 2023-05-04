@@ -38,6 +38,11 @@
 .tesler__text-wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 50%;
+
+  @media (max-width: $tablet-width) {
+    max-width: unset;
+  }
 }
 
 .tesler__about {
@@ -63,7 +68,9 @@
 
 .tesler__img {
   @media (max-width: $tablet-width) {
-    width: 100%;
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
     object-fit: cover;
   }
 }

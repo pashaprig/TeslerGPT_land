@@ -49,3 +49,15 @@
     }
   }
 }
+
+.promo__video-wrappew {
+  max-width: 50%;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: unset;
+  }
+}

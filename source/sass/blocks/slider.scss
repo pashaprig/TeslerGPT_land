@@ -1,0 +1,95 @@
+/**
+ * ItcSlider
+ * @version 1.0.0
+ * @author https://github.com/itchief
+ * @copyright Alexander Maltsev 2020 - 2022
+ * @license MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+ * @tutorial https://itchief.ru/javascript/slider
+ */
+
+ .itc-slider {
+  position: relative;
+}
+
+.itc-slider__wrapper {
+  overflow: hidden;
+}
+
+.itc-slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.itc-slider__transition-none {
+  transition: none;
+}
+
+/* на маленьких устройствах 1 слайд */
+.itc-slider__item {
+  flex: 0 0 100%;
+}
+
+/* на средних экранах (ширина больше 768px) 2 слайда */
+@media (min-width: $tablet-width) {
+  .itc-slider__item {
+    flex: 0 0 50%;
+  }
+}
+
+/* на больших экранах (ширина больше 1200px) 3 слайда */
+@media (min-width: 1200px) {
+  .itc-slider__item {
+    flex: 0 0 33.3333333333%;
+  }
+}
+
+/* кнопки влево и вправо */
+.itc-slider__btn {
+  position: absolute;
+  display: flex;
+  bottom: -50px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  background: none;
+
+  &:hover {
+    background: $bcg-black;
+
+    svg {
+      fill: $main-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  @media (max-width: $tablet-width) {
+    svg {
+      height: 18px;
+    }
+  }
+}
+
+.itc-slider__btn_hide {
+  display: none;
+}
+
+.itc-slider__btn_prev {
+  right: 100px;
+
+  svg {
+    fill: $bcg-black;
+  }
+}
+
+.itc-slider__btn_next {
+  right: 0;
+
+  svg {
+    fill: $bcg-black;
+  }
+}

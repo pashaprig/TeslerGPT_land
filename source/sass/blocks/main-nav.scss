@@ -4,6 +4,10 @@
   align-items: center;
   padding: 40px 0;
 
+  .btn {
+    display: none;
+  }
+
   @media (max-width: $tablet-width) {
     box-sizing: border-box;
     z-index: 2;
@@ -15,6 +19,10 @@
     width: 100%;
     padding: 25px 16px;
     background: $white-text;
+
+    .btn {
+      display: flex;
+    }
 
     & svg {
       fill: $main-color;
